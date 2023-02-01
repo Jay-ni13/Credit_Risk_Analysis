@@ -52,7 +52,7 @@ After cleaning and modifying the Loan Stats dataset to utilize 85 features to tr
 <img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/easy_ensemble_clf.png" width=75%>
 
 ## Summary
-The first four resampling models have high precision for predicting low risk loans, but very low precision when it comes to predicting high risk loans; the recall for all four models ranges between 0.40 to 0.71, with the high risks loan prediction generally having the higher sensitivity value. Though these low precision values for high risk loan prediction mean a greater number of false positives--saving Lending Club money by reducing the number of loan applications being approved as low risk--the mediocre recall score for high risk loan prediction in these models means that a number of loan applications that are actually high risk will be categorized as low risk (i.e. false negatives)--only 70% of high risk loan applications will correctly be flagged as such.
+The first four resampling models have high precision for predicting low risk loans, but very low precision when it comes to predicting high risk loans; the recall for all four models ranges between 0.40 to 0.71, with the high risk loan prediction generally having the higher sensitivity value. Though these low precision values for high risk loan prediction mean a greater number of false positives--saving Lending Club money by reducing the number of loan applications being approved as low risk--the mediocre recall score for high risk loan prediction in these models means that a number of loan applications that are actually high risk will be categorized as low risk (i.e. false negatives)--only 70% of high risk loan applications will correctly be flagged as such.
 
 For Lending Club to better evaluate loan applications and credit card risk, these models need more accurate recall scores to ensure they are identifying as many high risk loans as possible, because identifying some low risk applications as high risk is not as detrimental as classifying true high risk loans as low risk.
 
@@ -61,12 +61,13 @@ The two ensemble classifiers improve in both precision and recall over the resam
 ### Recommendation
 Though the Easy Ensemble AdaBoost Classifier might work as an interim option, analysis of features importance in the Balanced Random Forest Classifier indicate that the models could be further improved by modifying the initial dataset.
  - The models' 11 most important features:
-<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/most_important_features.png" width=55%>
+ <img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/most_important_features.png" width=60%>
 
  - The models' 11 least important features:
- <img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/least_important_features.png" width=40%>
+ <img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/least_important_features.png" width=35%>
  
  - The remaining 63 features only explain 0.0001 to 0.01 percent of the data.
-New data points/features should be added to evaluate their relationship to credit risk and features with mininal to no impact should be dropped to avoid overfitting of the model.
+
+New data points/features should be added to evaluate their relationship to credit risk and features with mininal to no impact should be dropped to avoid overfitting of the model. Then the machine learning models should be train on the modified dataset to find an option with a better high risk recall score to replace the interim option.
 
 
