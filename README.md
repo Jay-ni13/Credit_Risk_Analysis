@@ -14,42 +14,42 @@ After cleaning and modifying the Loan Stats dataset to utilize 85 features to tr
  - Precision Score (high_risk/low_risk): 0.01 / 1.00
  - Recall Score (high_risk/low_risk): 0.71 / 0.60
 
-<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/random_oversampling.png" width=75%>
+<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/random_oversampling.png" width=70%>
 
 ### 2. SMOTE Oversampling Model
  - Balanced Accuracy Score: 0.6622
  - Precision Score (high_risk/low_risk): 0.01 / 1.00
  - Recall Score (high_risk/low_risk): 0.63 / 0.69
 
-<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/smote_oversampling.png" width=75%>
+<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/smote_oversampling.png" width=70%>
 
 ### 3. Cluster Centroids Undersampling Model
  - Balanced Accuracy Score: 0.5443
  - Precision Score (high_risk/low_risk): 0.01 / 1.00
  - Recall Score (high_risk/low_risk): 0.69 / 0.40
 
-<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/cluster_cent_undersampling.png" width=75%>
+<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/cluster_cent_undersampling.png" width=70%>
 
 ### 4. SMOTEENN Combination Model
  - Balanced Accuracy Score: 0.6392
  - Precision Score (high_risk/low_risk): 0.01 / 1.00
  - Recall Score (high_risk/low_risk): 0.70 / 0.58
 
-<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/smoteenn_combination.png" width=75%>
+<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/smoteenn_combination.png" width=70%>
 
 ### 5. Balanced Random Forest Classifier
  - Balanced Accuracy Score: 0.7885
  - Precision Score (high_risk/low_risk): 0.03 / 1.00
  - Recall Score (high_risk/low_risk): 0.70 / 0.87
 
-<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/random_forest_clf.png" width=75%>
+<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/random_forest_clf.png" width=70%>
 
 ### 6. Easy Ensemble AdaBoost Classifier
  - Balanced Accuracy Score: 0.9317
  - Precision Score (high_risk/low_risk): 0.09 / 1.00
  - Recall Score (high_risk/low_risk): 0.92 / 0.94
 
-<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/easy_ensemble_clf.png" width=75%>
+<img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/easy_ensemble_clf.png" width=70%>
 
 ## Summary
 The first four resampling models have high precision for predicting low risk loans, but very low precision when it comes to predicting high risk loans; the recall for all four models ranges between 0.40 to 0.71, with the high risk loan prediction generally having the higher sensitivity value. Though these low precision values for high risk loan prediction mean a greater number of false positives--saving Lending Club money by reducing the number of loan applications being approved as low risk--the mediocre recall score for high risk loan prediction in these models means that a number of loan applications that are actually high risk will be categorized as low risk (i.e. false negatives)--only 70% of high risk loan applications will correctly be flagged as such.
