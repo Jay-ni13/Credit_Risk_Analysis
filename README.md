@@ -61,7 +61,7 @@ The two ensemble classifiers improve in both precision and recall over the resam
 ### Recommendation
 Though the Easy Ensemble AdaBoost Classifier might work as an interim option, analysis of features importance in the Balanced Random Forest Classifier indicate that the models could be further improved by modifying the initial dataset.
  - The models' 11 most important features:
- <img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/most_important_features.png" width=60%>
+ <img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/most_important_features.png" width=65%>
 
  - The models' 11 least important features:
  <img src="https://github.com/Jay-ni13/Credit_Risk_Analysis/blob/main/Images/least_important_features.png" width=35%>
